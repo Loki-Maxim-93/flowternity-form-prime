@@ -88,6 +88,9 @@ const FlowternityForm = () => {
         body: JSON.stringify(formData)
       });
 
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+
       if (response.ok) {
         toast({
           title: "Success!",
@@ -103,7 +106,9 @@ const FlowternityForm = () => {
           email: ''
         });
       } else {
-        throw new Error('Submission failed');
+        const errorText = await response.text();
+        console.log('Error response:', errorText);
+        throw new Error(`Submission failed: ${response.status} - ${errorText}`);
       }
     } catch (error) {
       toast({
