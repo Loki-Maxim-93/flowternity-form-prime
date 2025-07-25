@@ -105,6 +105,11 @@ const FlowternityForm = () => {
           phone: '',
           email: ''
         });
+
+        // Redirect to the new page after successful submission
+        setTimeout(() => {
+          window.location.href = 'https://flowternity.sites.loopzen.in/';
+        }, 1500); // Wait 1.5 seconds to show the success toast
       } else {
         const errorText = await response.text();
         console.log('Error response:', errorText);
