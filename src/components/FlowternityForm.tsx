@@ -77,7 +77,7 @@ const FlowternityForm = () => {
     try {
       // ===== WEBHOOK URL CONFIGURATION =====
       // Replace this URL with your n8n webhook endpoint
-      const WEBHOOK_URL = 'https://loopzen-n8n.app.n8n.cloud/webhook/turf-form';
+      const WEBHOOK_URL = 'https://loopzenn.app.n8n.cloud/webhook/turf-form';
       // =====================================
 
       const response = await fetch(WEBHOOK_URL, {
