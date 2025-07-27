@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import turfBackground from '@/assets/turf-background.jpg';
+import multisportsBackground from '/lovable-uploads/e8d1b780-142d-4b7b-a6b5-6ce5e85be6e0.png';
 
 interface FormData {
   name: string;
@@ -130,7 +130,7 @@ const FlowternityForm = () => {
     <div 
       className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${turfBackground})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${multisportsBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -144,7 +144,7 @@ const FlowternityForm = () => {
       <Card className="form-stadium w-full max-w-md relative z-10">
         <CardHeader className="text-center space-y-4 pb-6">
           <CardTitle className="text-3xl font-bold text-foreground tracking-wide">
-            Welcome to Flowternity Turf
+            Welcome to Flowerily Multisports
           </CardTitle>
           <p className="text-lg text-muted-foreground font-medium">
             Enter your details:
