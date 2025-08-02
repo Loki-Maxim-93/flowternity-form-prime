@@ -241,7 +241,7 @@ const FlowternityForm = () => {
               disabled={isSubmitting}
               className="btn-stadium w-full h-12 text-base mt-8"
             >
-              {isSubmitting ? 'Submitting...' : 'Join the turf'}
+              {isSubmitting ? 'Submitting...' : 'Enquire Now'}
             </Button>
           </form>
         </CardContent>
